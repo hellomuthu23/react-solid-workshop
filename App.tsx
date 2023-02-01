@@ -1,7 +1,8 @@
 import * as React from 'react';
 import './style.css';
 import { ActiveUsersList } from './SRP';
-import { HomePage } from './OCP-Solution';
+import { HomePage } from './OCP';
+import { VideoListComponent } from './ISP';
 export default function App() {
   return (
     <div>
@@ -10,6 +11,8 @@ export default function App() {
       <ActiveUsersList />
       <h2>Open Closed Principle</h2>
       <HomePage />
+      <h2>Interface Segregation Principle</h2>
+      <VideoListComponent />
     </div>
   );
 }
