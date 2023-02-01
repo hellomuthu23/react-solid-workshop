@@ -1,8 +1,7 @@
 import React = require('react');
-import { useLocation } from 'react-router';
 
 const Header = () => {
-  const { pathname } = useLocation();
+  const pathname = window.location.pathname;
 
   return (
     <header>
@@ -15,13 +14,13 @@ const Header = () => {
   );
 };
 
-const HomePage = () => (
+export const HomePage = () => (
   <div>
     <Header />
     <div>other</div>
   </div>
 );
-const DashboardPage = () => (
+export const DashboardPage = () => (
   <div>
     <Header />
     <div>dashboard</div>

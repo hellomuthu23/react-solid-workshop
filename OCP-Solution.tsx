@@ -8,19 +8,20 @@ const Header = ({ children }: any) => {
     </header>
   );
 };
-const HomePage = () => (
+
+export const HomePage = () => (
   <div>
     <Header>
-      <a href="/events/new">Create event</a>
+      <a href="/events/new">Go to dashboard</a>
     </Header>
     <div>other</div>
   </div>
 );
-const DashboardPage = () => (
+export const DashboardPage = () => (
   <div>
     <Header>
-      <a href="/dashboard">Go to dashboard</a>
+      <a href="/dashboard">Create event</a>
     </Header>
-    <div> dashboard</div>
+    <div>dashboard</div>
   </div>
 );
